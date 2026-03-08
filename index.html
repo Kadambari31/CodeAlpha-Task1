@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>My Image Gallery</h1>
+<p>HTML, CSS and JavaScript Image Gallery Project</p>
+
+<div class="buttons">
+<button onclick="filterSelection('all')">All</button>
+<button onclick="filterSelection('nature')">Nature</button>
+<button onclick="filterSelection('city')">City</button>
+<button onclick="filterSelection('animal')">Animals</button>
+</div>
+
+<div class="gallery">
+
+<img src="images/nature1.jpg" class="filter nature" onclick="openLightbox(this)">
+<img src="images/nature2.jpg" class="filter nature" onclick="openLightbox(this)">
+
+<img src="images/city1.jpg" class="filter city" onclick="openLightbox(this)">
+<img src="images/city2.jpg" class="filter city" onclick="openLightbox(this)">
+
+<img src="images/animal1.jpg" class="filter animal" onclick="openLightbox(this)">
+<img src="images/animal2.jpg" class="filter animal" onclick="openLightbox(this)">
+
+</div>
+
+<div id="lightbox">
+<span class="close" onclick="closeLightbox()">×</span>
+<img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
